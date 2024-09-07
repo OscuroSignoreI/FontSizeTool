@@ -40,7 +40,7 @@ label {
     margin-bottom: 5px;
 }
 
-input, select {
+input, select, textarea {
     padding: 5px;
     font-size: 16px;
 }
@@ -84,4 +84,57 @@ hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ddd;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .settings {
+        flex-basis: 100%;
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 20px;
+    }
+
+    .preview {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+        padding: 8px;
+        width: 93%;
+    }
+
+    input[type="color"]{
+        width: 99%;
+    }
+
+    select{
+        font-size: 1rem;
+        padding: 8px;
+        width: 99%;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    #generatedCSS {
+        width: 93%;
+    }
 }
