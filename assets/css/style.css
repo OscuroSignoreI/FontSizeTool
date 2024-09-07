@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings {
+    flex-basis: 20%;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.preview {
+    flex-basis: 80%;
+    padding-left: 20px;
+}
+
+h1, h2 {
+    text-align: left;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 5px;
+    font-size: 16px;
+    /* width: 100%; */
+}
+
+#output {
+    margin-top: 20px;
+}
+
+.output-text {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#generatedCSS {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: monospace;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Aggiungi classi personalizzate per l'anteprima */
+.preview-h1, .preview-h2, .preview-h3, .preview-h4, .preview-h5, .preview-h6, .preview-p, .preview-small {
+    margin: 10px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unit-label {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #888;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}

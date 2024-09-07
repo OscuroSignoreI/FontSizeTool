@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScale Replica</title>
+    <link rel="icon" href="assets/images/favicon.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings">
+        <h1>FontSizeTool</h1>
+        <div class="controls">
+          <label for="baseFontSize">Base Font Size (for p)</label>
+          <input type="number" id="baseFontSize" value="16" />
+
+          <label for="unit">Unit:</label>
+          <select id="unit">
+            <option value="px">px</option>
+            <option value="rem">rem</option>
+            <option value="em">em</option>
+            <option value="%">%</option>
+            <option value="pt">pt</option>
+          </select>
+
+          <label for="scaleFactor">Scale Factor:</label>
+          <select id="scaleFactor">
+            <option value="1.067">1.067 – Minor Second</option>
+            <option value="1.125">1.125 – Major Second</option>
+            <option value="1.200" selected>1.200 – Minor Third</option>
+            <option value="1.250">1.250 – Major Third</option>
+            <option value="1.333">1.333 – Perfect Fourth</option>
+            <option value="1.414">1.414 – Augmented Fourth</option>
+            <option value="1.500">1.500 – Perfect Fifth</option>
+            <option value="1.618">1.618 – Golden Ratio</option>
+          </select>
+          <hr />
+          <label for="customText">Enter your text for preview:</label>
+          <textarea id="customText" placeholder="Scrivi qui il tuo testo...">How vexingly quick daft zebras jump</textarea>
+        </div>
+      </div>
+
+      <div class="preview">
+        <h2>Preview of the Typographic Scale</h2>
+        <div id="output"></div>
+        <br /><br />
+        <h2>CSS Generator</h2>
+        <textarea id="generatedCSS" readonly></textarea>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
