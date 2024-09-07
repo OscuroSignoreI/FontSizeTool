@@ -6,6 +6,11 @@
     <title>TypeScale Replica</title>
     <link rel="icon" href="assets/images/favicon.jpg" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -35,6 +40,37 @@
             <option value="1.500">1.500 – Perfect Fifth</option>
             <option value="1.618">1.618 – Golden Ratio</option>
           </select>
+
+          <label for="headingColor">Heading Color:</label>
+          <input type="color" id="headingColor" value="#000000" />
+
+          <label for="paragraphColor">Paragraph Color:</label>
+          <input type="color" id="paragraphColor" value="#000000" />
+
+          <label for="fontFamily">Font Family:</label>
+          <select id="fontFamily">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Georgia, serif">Georgia</option>
+            <option value="'Courier New', monospace">Courier New</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="Tahoma, sans-serif">Tahoma</option>
+            <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+            <option value="'Lucida Console', monospace">Lucida Console</option>
+            <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+            <option value="'Impact', sans-serif">Impact</option>
+            <!-- Google Fonts -->
+            <option value="'Open Sans', sans-serif">'Open Sans'</option>
+            <option value="'Roboto', sans-serif">'Roboto'</option>
+            <option value="'Lato', sans-serif">'Lato'</option>
+            <option value="'Montserrat', sans-serif">'Montserrat'</option>
+            <option value="custom">Custom...</option>
+          </select>
+          <input type="text" id="customFontFamily" placeholder="Enter custom font family" style="display: none" />
+
+          <label for="lineHeight">Line Height:</label>
+          <input type="number" id="lineHeight" value="1.5" step="0.1" />
+
           <hr />
           <label for="customText">Enter your text for preview:</label>
           <textarea id="customText" placeholder="Scrivi qui il tuo testo...">How vexingly quick daft zebras jump</textarea>
@@ -47,6 +83,7 @@
         <br /><br />
         <h2>CSS Generator</h2>
         <textarea id="generatedCSS" readonly></textarea>
+        <button id="downloadCSS">Download CSS</button>
       </div>
     </div>
 
