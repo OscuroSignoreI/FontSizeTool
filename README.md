@@ -1,3 +1,4 @@
+
 # FontSizeTool
 
 FontSizeTool è uno strumento web-based per la generazione di una scala tipografica personalizzata. Consente agli utenti di definire le dimensioni base dei font, il fattore di scala e altre proprietà tipografiche per visualizzare e generare il CSS corrispondente.
@@ -16,7 +17,6 @@ FontSizeTool è uno strumento web-based per la generazione di una scala tipograf
 ## Anteprima
 
 L'interfaccia è suddivisa in due sezioni principali:
-
 1. **Settings**: permette di personalizzare la scala tipografica.
 2. **Preview & CSS Generator**: mostra l'anteprima del testo e il codice CSS generato.
 
@@ -53,4 +53,4 @@ Sentiti libero di contribuire con miglioramenti o segnalazioni di bug. Apri una 
 
 ## Licenza
 
-Questo progetto è distribuito con licenza MIT. Vedi il file `LICENSE` per maggiori dettagli.
+Questo progetto è distribuito con licenza GPL-3.0. Vedi il file `LICENSE` per maggiori dettagli.
